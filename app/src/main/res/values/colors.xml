@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#ffc40c</color>
+    <color name="colorForm">#808080</color>
+    <color name="purple_700">#8a867a</color>
+    <color name="yellow">#f7ce4d</color>
+    <color name="facebook">#1877F2</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
