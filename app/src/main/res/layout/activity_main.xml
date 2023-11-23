@@ -14,81 +14,110 @@
         android:layout_width="150sp"
         android:layout_height="150sp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/revenue"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="186dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton1"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.424"
+        app:srcCompat="@drawable/revenue" />
 
     <ImageView
         android:id="@+id/imageButton3"
         android:layout_width="150sp"
         android:layout_height="150sp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="48dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/budgeting"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="355dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/budgeting" />
 
     <ImageView
         android:id="@+id/imageButton5"
         android:layout_width="150sp"
         android:layout_height="150sp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="32dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/inventory"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="518dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/inventory" />
 
     <ImageView
         android:id="@+id/imageButton2"
         android:layout_width="150sp"
         android:layout_height="150sp"
+        android:layout_marginBottom="48dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/netincome"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="355dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/netincome" />
 
     <ImageView
         android:id="@+id/imageButton4"
         android:layout_width="150sp"
         android:layout_height="150sp"
+        android:layout_marginBottom="32dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/payroll"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="518dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/payroll" />
 
     <ImageView
         android:id="@+id/imageButton1"
         android:layout_width="150sp"
         android:layout_height="150sp"
+        android:layout_marginEnd="44dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/expenses"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="186dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.424"
+        app:srcCompat="@drawable/expenses" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="40sp"
         android:layout_height="40sp"
-        app:srcCompat="@drawable/baseline_notifications_24"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="26dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toEndOf="@+id/dashboard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/baseline_notifications_24" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="40sp"
         android:layout_height="40sp"
-        app:srcCompat="@drawable/ic_person"
-        tools:layout_editor_absoluteX="331dp"
-        tools:layout_editor_absoluteY="26dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/ic_person" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="DASHBOARD"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="129dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
 
     <TextView
         android:id="@+id/dashboard"
@@ -102,7 +131,7 @@
         app:layout_constraintHorizontal_bias="0.379"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045">
+        app:layout_constraintVertical_bias="0.044">
 
     <TextView
         android:id="@+id/textView13"
@@ -111,15 +140,23 @@
         android:text="Employee's Name"
         android:textColor="@color/black"
         android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dashboard"
-        tools:layout_editor_absoluteX="116dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="100sp"
         android:layout_height="100sp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
